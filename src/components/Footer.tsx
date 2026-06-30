@@ -1,4 +1,5 @@
-import { Zap, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,36 +16,30 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-sk-red p-2 rounded-lg">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-white font-bold text-lg leading-tight">ESCO</span>
-                <span className="text-sk-orange text-xs font-semibold">Slovensko</span>
-              </div>
+            <div className="mb-4">
+              <Logo variant="footer" />
             </div>
             <p className="text-gray-300 text-sm mb-4">
-              Komplexné elektroinštalačné riešenia pre váš úspech. Člen skupiny ESCO Slovensko.
+              Komplexné elektroinštalačné riešenia pre váš úspech. Master Electrician – váš partner pre silnoprúd, slaboprúd a smart technológie.
             </p>
             <div className="flex space-x-3">
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-sk-red p-2 rounded-lg transition-colors"
+                className="bg-white/10 hover:bg-accent hover:text-graphite p-2 rounded-lg transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:info@esco.sk"
-                className="bg-white/10 hover:bg-sk-red p-2 rounded-lg transition-colors"
+                href="mailto:Masterelectrician.sro@gmail.com"
+                className="bg-white/10 hover:bg-accent hover:text-graphite p-2 rounded-lg transition-colors"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a
-                href="tel:+421321234567"
-                className="bg-white/10 hover:bg-sk-red p-2 rounded-lg transition-colors"
+                href="tel:+421949260957"
+                className="bg-white/10 hover:bg-accent hover:text-graphite p-2 rounded-lg transition-colors"
               >
                 <Phone className="w-5 h-5" />
               </a>
@@ -57,7 +52,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-300 hover:text-sk-red transition-colors text-sm"
+                  className="text-gray-300 hover:text-accent transition-colors text-sm"
                 >
                   O nás
                 </button>
@@ -65,7 +60,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-300 hover:text-sk-red transition-colors text-sm"
+                  className="text-gray-300 hover:text-accent transition-colors text-sm"
                 >
                   Služby
                 </button>
@@ -73,7 +68,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('references')}
-                  className="text-gray-300 hover:text-sk-red transition-colors text-sm"
+                  className="text-gray-300 hover:text-accent transition-colors text-sm"
                 >
                   Referencie
                 </button>
@@ -81,7 +76,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('career')}
-                  className="text-gray-300 hover:text-sk-red transition-colors text-sm"
+                  className="text-gray-300 hover:text-accent transition-colors text-sm"
                 >
                   Kariéra
                 </button>
@@ -89,7 +84,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="text-gray-300 hover:text-sk-red transition-colors text-sm"
+                  className="text-gray-300 hover:text-accent transition-colors text-sm"
                 >
                   Kontakt
                 </button>
@@ -113,19 +108,19 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Kontakt</h3>
             <div className="space-y-3 text-sm text-gray-300">
               <div className="flex items-start space-x-2">
-                <MapPin className="w-5 h-5 text-sk-red flex-shrink-0 mt-0.5" />
-                <span>Priemyselná 1234/5<br />915 01 Nové Mesto nad Váhom</span>
+                <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span>Piaristická 276/46<br />911 01 Trenčín</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="w-5 h-5 text-sk-red flex-shrink-0" />
-                <a href="tel:+421321234567" className="hover:text-sk-red transition-colors">
-                  +421 32 123 4567
+                <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+                <a href="tel:+421949260957" className="hover:text-accent transition-colors">
+                  +421 949 260 957
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="w-5 h-5 text-sk-red flex-shrink-0" />
-                <a href="mailto:info@esco.sk" className="hover:text-sk-red transition-colors">
-                  info@esco.sk
+                <Mail className="w-5 h-5 text-accent flex-shrink-0" />
+                <a href="mailto:Masterelectrician.sro@gmail.com" className="hover:text-accent transition-colors break-all">
+                  Masterelectrician.sro@gmail.com
                 </a>
               </div>
             </div>
@@ -133,42 +128,18 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-300">
-              <p className="mb-2">
-                © {currentYear} ESCO Slovensko s.r.o. Všetky práva vyhradené.
-              </p>
-              <p className="text-xs">
-                IČO: 12345678 | DIČ: SK2012345678 | IČ DPH: SK2012345678
-              </p>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="bg-white/10 px-4 py-2 rounded-lg text-xs font-semibold">
-                ISO 9001:2015
-              </div>
-              <div className="bg-white/10 px-4 py-2 rounded-lg text-xs font-semibold">
-                ISO 14001:2015
-              </div>
-              <div className="bg-white/10 px-4 py-2 rounded-lg text-xs font-semibold">
-                ISO 45001:2018
-              </div>
-            </div>
+          <div className="text-sm text-gray-300 text-center md:text-left">
+            <p className="mb-2">
+              © {currentYear} Master Electrician s.r.o. Všetky práva vyhradené.
+            </p>
+            <p className="text-xs">
+              IČO: 56841370 | DIČ: 2122469052 | IČ DPH: 2122469052
+            </p>
           </div>
 
-          <div className="mt-4 text-center text-xs text-gray-400">
-            <a href="#" className="hover:text-sk-red transition-colors mx-2">
-              Ochrana osobných údajov
-            </a>
-            |
-            <a href="#" className="hover:text-sk-red transition-colors mx-2">
-              Obchodné podmienky
-            </a>
-            |
-            <a href="#" className="hover:text-sk-red transition-colors mx-2">
-              Reklamačný poriadok
-            </a>
-          </div>
+          <p className="text-xs mt-3 text-gray-400 text-center md:text-left">
+            Reklamačný poriadok poskytneme na vyžiadanie e-mailom.
+          </p>
         </div>
       </div>
     </footer>

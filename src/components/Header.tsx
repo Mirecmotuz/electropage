@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,38 +31,37 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="bg-sk-red p-2 rounded-lg">
-              <Zap className="w-6 h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-graphite font-bold text-lg leading-tight">ESCO</span>
-              <span className="text-sk-orange text-xs font-semibold">Slovensko</span>
-            </div>
-          </div>
+          <button
+            type="button"
+            className="cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            aria-label="Master Electrician – domov"
+          >
+            <Logo variant="header" />
+          </button>
 
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('about')}
-              className="text-graphite hover:text-sk-red transition-colors font-medium"
+              className="text-graphite hover:text-accent transition-colors font-medium"
             >
               O nás
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-graphite hover:text-sk-red transition-colors font-medium"
+              className="text-graphite hover:text-accent transition-colors font-medium"
             >
               Služby
             </button>
             <button
               onClick={() => scrollToSection('references')}
-              className="text-graphite hover:text-sk-red transition-colors font-medium"
+              className="text-graphite hover:text-accent transition-colors font-medium"
             >
               Referencie
             </button>
             <button
               onClick={() => scrollToSection('career')}
-              className="text-graphite hover:text-sk-red transition-colors font-medium"
+              className="text-graphite hover:text-accent transition-colors font-medium"
             >
               Kariéra
             </button>
@@ -69,7 +69,7 @@ const Header = () => {
 
           <button
             onClick={() => scrollToSection('contact')}
-            className="hidden md:block bg-sk-red text-white px-6 py-3 rounded-lg hover:bg-sk-red/90 transition-all font-semibold shadow-md hover:shadow-xl transform hover:scale-105"
+            className="hidden md:block bg-graphite text-white px-6 py-3 rounded-lg hover:bg-accent hover:text-graphite transition-all font-semibold shadow-md hover:shadow-xl transform hover:scale-105"
           >
             Kontakt
           </button>
@@ -88,31 +88,31 @@ const Header = () => {
           <nav className="px-4 py-4 space-y-2">
             <button
               onClick={() => scrollToSection('about')}
-              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg rounded-lg transition-colors font-medium"
+              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg hover:text-accent rounded-lg transition-colors font-medium"
             >
               O nás
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg rounded-lg transition-colors font-medium"
+              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg hover:text-accent rounded-lg transition-colors font-medium"
             >
               Služby
             </button>
             <button
               onClick={() => scrollToSection('references')}
-              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg rounded-lg transition-colors font-medium"
+              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg hover:text-accent rounded-lg transition-colors font-medium"
             >
               Referencie
             </button>
             <button
               onClick={() => scrollToSection('career')}
-              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg rounded-lg transition-colors font-medium"
+              className="block w-full text-left px-4 py-3 text-graphite hover:bg-light-bg hover:text-accent rounded-lg transition-colors font-medium"
             >
               Kariéra
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="block w-full bg-sk-red text-white px-4 py-3 rounded-lg hover:bg-sk-red/90 transition-colors font-semibold mt-2"
+              className="block w-full bg-graphite text-white px-4 py-3 rounded-lg hover:bg-accent hover:text-graphite transition-colors font-semibold mt-2"
             >
               Kontakt
             </button>
