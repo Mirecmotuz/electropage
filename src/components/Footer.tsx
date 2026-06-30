@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import Logo from './Logo';
 
 const Footer = () => {
@@ -24,12 +24,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.instagram.com/masterelectrician.s.r.o?utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram Master Electrician"
                 className="bg-white/10 hover:bg-accent hover:text-graphite p-2 rounded-lg transition-colors"
               >
-                <Linkedin className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="mailto:Masterelectrician.sro@gmail.com"

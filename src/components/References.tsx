@@ -7,7 +7,6 @@ interface Reference {
   title: string;
   category: Category;
   description: string;
-  // Nahraďte placeholder URL cestami k vlastným fotkám, napr. ['/references/zuckermandel-1.jpg', '/references/zuckermandel-2.jpg']
   images: string[];
   partner?: string;
 }
@@ -17,63 +16,63 @@ const references: Reference[] = [
     title: 'Zuckermandel',
     category: 'Administratíva',
     description: 'Komplexné inštalácie v modernej mestskej štvrti pod Bratislavským hradom.',
-    images: ['https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/zuckermandel.webp'],
     partner: 'Strabag'
   },
   {
     title: 'Rosum',
     category: 'Administratíva',
     description: 'Technologicky vyspelé biznis centrum v Ružinove.',
-    images: ['https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/rosum.webp'],
     partner: 'Metrostav'
   },
   {
     title: 'BBC 1 & BBC 5',
     category: 'Administratíva',
     description: 'Silnoprúdové a slaboprúdové rozvody pre kľúčové biznis komplexy Bratislava Business Center.',
-    images: ['https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/bbc.jpg'],
     partner: 'CBRE'
   },
   {
     title: 'CBC 1 & CBC 2',
     category: 'Administratíva',
     description: 'Realizácia infraštruktúry a rozvodov pre City Business Center.',
-    images: ['https://images.pexels.com/photos/273209/pexels-photo-273209.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/cbc.jpg'],
     partner: 'Wood Company'
   },
   {
     title: 'Nivy',
     category: 'Obchod',
     description: 'Spolupráca na projektoch v modernom pulzujúcom srdci Bratislavy – autobusová stanica a nákupné centrum.',
-    images: ['https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/nivy.jpg'],
     partner: 'Strabag'
   },
   {
     title: 'Aupark Bratislava',
     category: 'Obchod',
     description: 'Elektroinštalačné a montážne práce v jednom z najnavštevovanejších nákupných centier.',
-    images: ['https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/aupark.jpg'],
     partner: 'CBRE'
   },
   {
     title: 'Vivo! Bratislava',
     category: 'Obchod',
     description: 'Modernizácia a rekonštrukcia sietí (bývalý Polus City Center).',
-    images: ['https://images.pexels.com/photos/811109/pexels-photo-811109.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/vivo.jpg'],
     partner: 'Invizo'
   },
   {
     title: 'Volkswagen Bratislava',
     category: 'Priemysel',
     description: 'Náročné priemyselné elektroinštalácie a optické siete pre lídra automobilového priemyslu.',
-    images: ['https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=800'],
+    images: ['/projects/wolswagen.jpg'],
     partner: 'Elimer'
   },
   {
     title: 'Slovenská národná galéria',
     category: 'Kultúra',
     description: 'Hrdá spoluúčasť na technologicky mimoriadne komplexnej rekonštrukcii národnej kultúrnej inštitúcie.',
-    images: ['https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=800']
+    images: ['/projects/slovenska_narodna_galeria.jpg']
   }
 ];
 

@@ -4,19 +4,19 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     title: 'Komplexné elektroinštalačné riešenia od návrhu po servis.',
-    image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1920'
+    image: '/web_pictures/hero-slide-1.jpg'
   },
   {
     title: 'Pôsobíme na Slovensku a v celej Európskej únii.',
-    image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1920'
+    image: '/web_pictures/hero-slide-2.jpg'
   },
   {
     title: 'Špecialisti na silnoprúdové a slaboprúdové systémy.',
-    image: 'https://images.pexels.com/photos/159201/circuit-circuit-board-resistor-computer-159201.jpeg?auto=compress&cs=tinysrgb&w=1920'
+    image: '/web_pictures/hero-slide-3.jpg'
   },
   {
     title: 'Servis a podpora 24/7/365 pre vašu bezpečnosť.',
-    image: 'https://images.pexels.com/photos/4792285/pexels-photo-4792285.jpeg?auto=compress&cs=tinysrgb&w=1920'
+    image: '/web_pictures/hero-slide-4.jpg'
   }
 ];
 

@@ -103,7 +103,7 @@ const About = () => {
 
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/web_pictures/about-electro.jpg"
               alt="Elektro práce"
               className="rounded-xl shadow-2xl"
             />
