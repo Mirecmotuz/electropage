@@ -106,7 +106,7 @@ const Insurance = () => {
             )}
           </button>
 
-          <div className={`overflow-hidden transition-all duration-400 ${showPricing ? 'max-h-[600px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+          <div className={`overflow-hidden transition-all duration-500 ${showPricing ? 'max-h-[900px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-6">
               {pricingBlocks.map((block, i) => (
                 <div key={i}>
