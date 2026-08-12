@@ -6,7 +6,7 @@ const company = {
   country: 'Slovenská republika',
   ico: '56841370',
   dic: '2122469052',
-  icDph: '2122469052',
+  icDph: 'SK2122469052',
   director: 'Pelech Samuel',
   email: 'masterelectrician.sro@gmail.com',
   phone: '+421 949 260 957',

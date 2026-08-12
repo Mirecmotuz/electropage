@@ -134,7 +134,7 @@ const Footer = () => {
               © {currentYear} Master Electrician s.r.o. Všetky práva vyhradené.
             </p>
             <p className="text-xs">
-              IČO: 56841370 | DIČ: 2122469052 | IČ DPH: 2122469052
+              IČO: 56841370 | DIČ: 2122469052 | IČ DPH: SK2122469052
             </p>
           </div>
 
