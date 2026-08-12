@@ -8,7 +8,7 @@ const company = {
   dic: '2122469052',
   icDph: '2122469052',
   director: 'Pelech Samuel',
-  email: 'Masterelectrician.sro@gmail.com',
+  email: 'masterelectrician.sro@gmail.com',
   phone: '+421 949 260 957',
   phoneHref: '+421949260957',
   mapUrl: 'https://maps.google.com/?q=Piaristická+276/46,+91101+Trenčín'
